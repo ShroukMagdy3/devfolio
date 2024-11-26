@@ -1,0 +1,279 @@
+#home{
+    background:linear-gradient(90deg, rgba(0, 2, 9, 0.603) 100%, rgba(0, 2, 9, 0.521) 100%),url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+  background-attachment: fixed;
+}
+.content h2{
+    font-size: 50px;
+}
+.content h4::after {
+    content: "";
+    animation: typing infinite 6s; 
+    transition: 3s;
+    font-size: 35px;
+}
+
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+    4% {
+        content: "D";
+    }
+    8% {
+        content: "De";
+    }
+    12% {
+        content: "Des";
+    }
+    16% {
+        content: "Desi";
+    }
+    20% {
+        content: "Desig";
+    }
+    24% {
+        content: "Design";
+    }
+    28% {
+        content: "Designe";
+    }
+    32% {
+        content: "Designer";
+    }
+    36% {
+        content: "|";
+    }
+    40% {
+        content: "D";
+    }
+    44% {
+        content: "De";
+    }
+    48% {
+        content: "Dev";
+    }
+    52% {
+        content: "Deve";
+    }
+    56% {
+        content: "Devel";
+    }
+    60% {
+        content: "Develo";
+    }
+    64% {
+        content: "Develop";
+    }
+    68% {
+        content: "Develope";
+    }
+    72% {
+        content: "Developer";
+    }
+    76% {
+        content: "|"; 
+    }
+    80% {
+        content: "Ph"; 
+    }
+    84% {
+        content: "Pho";
+    }
+    88% {
+        content: "Phot";
+    }
+    92% {
+        content: "Photo";
+    }
+    96% {
+        content: "Photog";
+    }
+    100% {
+        content: "Photogr";
+    }
+    104% {
+        content: "Photogra";
+    }
+    108% {
+        content: "Photograp";
+    }
+    112% {
+        content: "Photograph";
+    }
+    116% {
+        content: "Photographer"; 
+    }
+    120% {
+        content: "|"; 
+    }
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 1s;
+    line-height: 20px;
+    background-color: white;
+}
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+
+.ul-main {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width:200px;
+}
+.main:hover .ul-main {
+    display: block;
+}
+.main ul li:hover {
+    transform: translateX(3px);
+    cursor: pointer;
+}
+.sub-deep{
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    z-index: 1200;
+    width: 100%;
+    display: none;
+    background-color: white;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+
+}
+.main ul li {
+    transition: .5s;
+    padding: 5px;
+}
+.deep:hover .sub-deep{
+    display: block;
+    
+}
+.ul-main > li:not(.sub-deep):hover{
+    color: blue;
+}
+.sub-deep li{
+    color: black;
+}
+.deep .sub-deep li:hover {
+    color: blue;
+}
+/* ----------------------------------------------------- */
+/* start of about */
+#about , #services{
+    background-color: #eee;
+}
+#about .container{
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6)
+}
+#about .progress{
+    border-radius: 0;
+    height: 8px;
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+#services i{
+    border: 10px solid #2D90FF;
+    border-radius: 50%;
+    transition: 1s;
+    margin: 10px;
+}
+#services .content:hover i{
+background-color: #2D90FF;
+border-color: #eee;
+color: white;
+}
+#services .content{
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+#number{
+    background: linear-gradient(90deg, rgba(0,120,255,0.6727065826330532) 100%, rgba(0,2,9,0.8323704481792717) 100%) , url(../images/counters-bg.jpg) ;
+background-position: center center;
+background-size: cover;
+background-attachment: fixed;
+}
+
+#number i{
+    border: 10px solid #CDE1F8;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+#portoflio{
+    background-color: #eee;
+}
+#portoflio .card{
+    overflow: hidden;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4)
+
+}
+#portoflio .photo{
+    transition: 1s;
+}
+#portoflio .photo:hover {
+    transform: scale(1.1);
+}
+h2{
+    font-size: 60px;
+}
+#slide ,#contact{
+    background: linear-gradient(90deg, rgba(0,120,255,0.6727065826330532) 100%, rgba(0,2,9,0.8323704481792717) 100%) , url(../images/overlay-bg.jpg)  ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#slide button{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+#blog .footer img{
+    width: 50px;
+    height: 50px;
+}
+#blog a{
+    color: black;
+    transition: .5s;
+}
+#blog  a:hover{
+    color: #2D90FF;
+}
+#contact .container{
+    box-shadow: 2px 4px 8px rgb(0, 0, 0)
+  
+}
+#contact button{
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    transition: 1s;
+}
+#contact button:hover{
+    background-color: #73adf0f6;
+    border: 3px solid #bebbbb;
+}
+#contact .icons i{
+    transition: 1s;
+}
+#contact .icons i:hover{
+    background-color: #2D90FF;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
